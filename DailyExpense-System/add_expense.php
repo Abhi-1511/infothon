@@ -128,6 +128,8 @@ if (isset($_GET['delete'])) {
                 <a href="index.php" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
                 <a href="add_expense.php" class="list-group-item list-group-item-action sidebar-active"><span data-feather="plus-square"></span> Add Expenses</a>
                 <a href="manage_expense.php" class="list-group-item list-group-item-action"><span data-feather="dollar-sign"></span> Manage Expenses</a>
+                <a href="remainder.php" class="list-group-item list-group-item-action "><span data-feather="circle-sign"></span> Remainders</a>
+                <a href="target.php" class="list-group-item list-group-item-action "><span data-feather="clock"></span> Target</a>
             </div>
             <div class="sidebar-heading">Settings </div>
             <div class="list-group list-group-flush">
@@ -179,7 +181,7 @@ if (isset($_GET['delete'])) {
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="expensedate" class="col-sm-6 col-form-label"><b>Date</b></label>
+                                <label for="expensedate" class="col-sm-6 col-form-label"><b>Due Date</b></label>
                                 <div class="col-md-6">
                                     <input type="date" class="form-control col-sm-12" value="<?php echo $expensedate; ?>" name="expensedate" id="expensedate" required>
                                 </div>

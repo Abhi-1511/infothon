@@ -41,6 +41,8 @@ $exp_fetched = mysqli_query($con, "SELECT * FROM expenses WHERE user_id = '$user
                 <a href="index.php" class="list-group-item list-group-item-action sidebar-active"><span data-feather="home"></span> Dashboard</a>
                 <a href="add_expense.php" class="list-group-item list-group-item-action "><span data-feather="plus-square"></span> Add Expenses</a>
                 <a href="manage_expense.php" class="list-group-item list-group-item-action "><span data-feather="dollar-sign"></span> Manage Expenses</a>
+                <a href="remainder.php" class="list-group-item list-group-item-action "><span data-feather="circle-sign"></span> Remainders</a>
+                <a href="target.php" class="list-group-item list-group-item-action "><span data-feather="clock"></span> Target</a>
             </div>
             <div class="sidebar-heading">Settings </div>
             <div class="list-group list-group-flush">

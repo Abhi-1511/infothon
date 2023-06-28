@@ -6,6 +6,7 @@ if (isset($_REQUEST['firstname'])) {
     $firstname = mysqli_real_escape_string($con, $firstname);
     $lastname = stripslashes($_REQUEST['lastname']);
     $lastname = mysqli_real_escape_string($con, $lastname);
+    
 
     $email = stripslashes($_REQUEST['email']);
     $email = mysqli_real_escape_string($con, $email);
@@ -146,6 +147,10 @@ if (isset($_REQUEST['firstname'])) {
 
     .signup-form form a:hover {
       text-decoration: underline;
+    }
+    body{
+      background-color:#0066ff ;
+      margin-top: 50px;
     }
   </style>
 </head>

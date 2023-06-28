@@ -36,8 +36,8 @@ if (isset($_POST['email'])) {
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
     .login-form {
-      width: 340px;
-      margin: 50px auto;
+      width: 400px;
+      margin: 100px auto;
       font-size: 15px;
     }
 
@@ -95,13 +95,16 @@ if (isset($_POST['email'])) {
       font-size: 15px;
       font-weight: bold;
     }
+    body{
+      background-color: #0066ff;
+    }
   </style>
 </head>
 
 <body>
   <div class="login-form">
     <form action="" method="POST" autocomplete="off">
-      <h2 class="text-center">D.E.M.S</h2>
+      <h2 class="text-center">W.W.W</h2>
       <p class="hint-text">Login Panel</p>
       <div class="form-group">
         <input type="text" name="email" class="form-control" placeholder="Email" required="required">

@@ -56,6 +56,8 @@
         <a href="index.php" class="list-group-item list-group-item-action sidebar-active"><span data-feather="home"></span> Dashboard</a>
         <a href="add_expense.php" class="list-group-item list-group-item-action "><span data-feather="plus-square"></span> Add Expenses</a>
         <a href="manage_expense.php" class="list-group-item list-group-item-action "><span data-feather="dollar-sign"></span> Manage Expenses</a>
+        <a href="remainder.php" class="list-group-item list-group-item-action "><span data-feather="check-circle"></span> Remainders</a>
+        <a href="target.php" class="list-group-item list-group-item-action "><span data-feather="clock"></span> Target</a>
       </div>
       <div class="sidebar-heading">Settings </div>
       <div class="list-group list-group-flush">
@@ -64,7 +66,7 @@
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
-
+    
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
@@ -104,13 +106,19 @@
                     </a>
                   </div>
                   <div class="col text-center">
+                    <a href="target.php"><img src="target.jpg" width="57px" />
+                      <p>Target</p>
+                    </a>
+                  </div>
+                  <div class="col text-center">
                     <a href="manage_expense.php"><img src="icon/maex.png" width="57px" />
                       <p>Manage Expenses</p>
                     </a>
                   </div>
                   <div class="col text-center">
-                    <a href="profile.php"><img src="icon/prof.png" width="57px" />
-                      <p>User Profile</p>
+                  <a href="#" onclick="window.open('remainder.php', 'popup', 'width=500,height=500'); return false;"><img src="remainder.jpg" width="57px" />
+                      <p>Remainder</p>
+              
                     </a>
                   </div>
                 </div>

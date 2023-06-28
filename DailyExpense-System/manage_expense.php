@@ -41,6 +41,8 @@ $exp_fetched = mysqli_query($con, "SELECT * FROM expenses WHERE user_id = '$user
                 <a href="index.php" class="list-group-item list-group-item-action"><span data-feather="home"></span> Dashboard</a>
                 <a href="add_expense.php" class="list-group-item list-group-item-action "><span data-feather="plus-square"></span> Add Expenses</a>
                 <a href="manage_expense.php" class="list-group-item list-group-item-action sidebar-active"><span data-feather="dollar-sign"></span> Manage Expenses</a>
+                <a href="remainder.php" class="list-group-item list-group-item-action "><span data-feather="circle-sign"></span> Remainders</a>
+                <a href="target.php" class="list-group-item list-group-item-action "><span data-feather="clock"></span> Target</a>
             </div>
             <div class="sidebar-heading">Settings </div>
             <div class="list-group list-group-flush">
@@ -88,7 +90,7 @@ $exp_fetched = mysqli_query($con, "SELECT * FROM expenses WHERE user_id = '$user
                             <thead>
                                 <tr class="text-center">
                                     <th>#</th>
-                                    <th>Date</th>
+                                    <th>Due Date</th>
                                     <th>Amount</th>
                                     <th>Expense Category</th>
                                     <th colspan="2">Action</th>
@@ -105,7 +107,7 @@ $exp_fetched = mysqli_query($con, "SELECT * FROM expenses WHERE user_id = '$user
                                         <a href="add_expense.php?edit=<?php echo $row['expense_id']; ?>" class="btn btn-primary btn-sm" style="border-radius:0%;">Edit</a>
                                     </td>
                                     <td class="text-center">
-                                        <a href="add_expense.php?delete=<?php echo $row['expense_id']; ?>" class="btn btn-danger btn-sm" style="border-radius:0%;">Delete</a>
+                                        <a href="add_expense.php?delete=<?php echo $row['expense_id']; ?>" class="btn btn-danger btn-sm" style="border-radius:0%;">Paid</a>
                                     </td>
                                 </tr>
                             <?php $count++; } ?>
